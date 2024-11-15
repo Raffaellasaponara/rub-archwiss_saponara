@@ -1,0 +1,29 @@
+---
+title: "session 3 tskas"
+author: "raffaella angela saponara"
+date: "2024-11-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+stone_tool_data <-
+
+```
+| **Numero di inventario** | **Lunghezza (cm)** | **Larghezza (cm)** | **Spessore (cm)** | **Tipo di materiale** | **Provenienza del materiale** |
+|--------------------------|--------------------|--------------------|-------------------|-----------------------|-----------------------------|
+| LN15                    | 18                 | 9                  | 3                 | Selce                 | Locale                      |
+| LN17                    | 14                 | 7                  | 2                 | Selce                 | Locale                      |
+| LN18                    | 21                 | 10                 | 3                 | Ossidiana             | Locale                      |
+| LN21                    | 14                 | 7                  | 3                 | Selce                 | Non locale                  |
+| LN23                    | 17                 | 8                  | 3                 | Ossidiana             | Locale                      |
+| LN24                    | 16                 | 8                  | 2                 | Ossidiana             | Non locale                  |
+# Display the data frame
+knitr::kable(stone_tools_data)
+
+
