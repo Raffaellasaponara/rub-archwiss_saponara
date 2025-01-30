@@ -1,0 +1,13 @@
+# dataset
+
+templi \<- data.frame( Name = c("Tempio of Hera I", "Tempio of Hera II", "Temple of Athena"), Era = c(550, 460, 500) \# Approximate year of construction a.c. )
+
+# plot
+
+library(ggplot2)
+
+ggplot(temples, aes(x = reorder(Name, -Era), y = Era, fill = Name)) + geom_bar(stat = "identity", width = 0.6, color = "black") + geom_text(aes(label = Era), vjust = -0.5, size = 5) + \# Add the era label above the bars scale_fill_manual(values = c("#E69F00", "#56B4E9", "#009E73")) + \# Custom colors labs(title = "Construction Era of Paestum Temples", x = "Temple Name", y = "Construction Year (BC)", fill = "Temple") + theme_minimal(base_size = 14) + theme(axis.text.x = element_text(angle = 20, hjust = 1)) \# Rotate the x-axis labels for better readability
+
+# PNG image
+
+ggsave("paestum_temples_barplot.png", width = 8, height = 6, dpi = 300)
